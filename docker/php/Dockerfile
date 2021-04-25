@@ -1,7 +1,7 @@
 FROM php:7.3-fpm
 ARG TIMEZONE
 
-RUN apt-get update && apt-get install -y mysql-client unzip curl sqlite3 git
+RUN apt-get update && apt-get install -y default-mysql-client unzip curl sqlite3 git
 
 # install the PHP extensions we need and remove dependencies once its built.
 RUN set -ex; \
